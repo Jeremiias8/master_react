@@ -1,3 +1,8 @@
-# master_react
-Máster en React - Hooks, MERN, Router...
-Contenido que voy subiendo del curso actual en el que aprendo alta cantidad de conocimientos en React, cada proyecto generado con ViteJS.
+# React + Vite
+
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+
+Currently, two official plugins are available:
+
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
