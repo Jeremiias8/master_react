@@ -1,0 +1,8 @@
+calendario de pagos, fecha de pagos
+
+si es superior se añade, sino no
+
+100 personas, 1200€
+
+boton editar-borrar, al lado de cada pago y línea de los
+pagos

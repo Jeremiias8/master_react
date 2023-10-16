@@ -1,0 +1,99 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(37, 37, 37, 0.87);
+  background-color: #e2dcdc;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: flex-start;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+.text-max {
+  color: rgb(173, 115, 7);
+}
+
+.pickers-container {
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: 10px;
+
+}
+
+/*
+span::after {
+  padding-left: 8px;
+}
+
+input:invalid + span::after {
+  content: "❌​";
+}
+
+input:valid + span::after {
+  content: "✔️​";
+}
+*/
+
+input[type="text"],
+input[type="date"] {
+  margin: 8px;
+  padding: 8px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border: 1px solid rgb(133, 128, 128);
+  background-color: transparent;
+  cursor: pointer;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+  color: rgb(173, 115, 7);
+  cursor: pointer;
+}
+
+.numper-box {
+  display: grid;
+  justify-content: flex-start;
+  margin-bottom: 25px;
+}
+
+.aste-symbol {
+  color: rgb(173, 115, 7);
+}
+
+.pers-number {
+  background-color: white;
+  margin: 5px;
+  padding: 10px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.clearfix {
+  float: none;
+  clear: both;
+}
+
+.total-pay {
+  font-weight: bold;
+}
