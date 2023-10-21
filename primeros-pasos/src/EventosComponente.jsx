@@ -4,7 +4,7 @@ import './index.css'
 export const EventosComponente = () => {
 
     const hasDadoClick = (e, nombre) => {
-        alert("Has dado click al botón !! "+nombre);
+        alert("Has dado click al botón ! "+nombre);
     }
 
     function hasDadoDobleClick (e) {
@@ -16,7 +16,7 @@ export const EventosComponente = () => {
     }
 
     const estasDentro = e => {
-        console.log("Estás dentro del input, mete tu nombre !");
+        console.log("Estás dentro del input, introduce tu nombre !");
     }
 
     const estasFuera = e => {
@@ -34,7 +34,7 @@ export const EventosComponente = () => {
 
         <p>
             {/* doubleClick */}
-            <button onDoubleClick={ hasDadoDobleClick }>Clickeame doblemente</button>
+            <button onDoubleClick={ hasDadoDobleClick }>Clickeame dos veces</button>
         </p>
 
         <div id="caja" 

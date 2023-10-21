@@ -31,9 +31,9 @@ const MiComponente = () => {
                 <h3>Datos sacados del JSON</h3>
 
                 <ul>
-                    <li>Usu - Nombre: {usuario.nombre}</li>
-                    <li>Usu - Apellido/s: {usuario.apellidos}</li>
-                    <li>Usu - Web: {usuario.web}</li>
+                    <li>Usu, Nombre: {usuario.nombre}</li>
+                    <li>Usu, Apellido/s: {usuario.apellidos}</li>
+                    <li>Usu, Web: {usuario.web}</li>
                 </ul>
             </div>
         </>
