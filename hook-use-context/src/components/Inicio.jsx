@@ -9,7 +9,7 @@ export const Inicio = () => {
     <div>
       <h1>Inicio</h1>
       <p>Página de inicio</p>
-      <p>Nombre: {usuario.nombre}, y Web: {usuario.web}</p>
+      <p>Nombre: {usuario.nombre}, y Web: {usuario.web}</p> 
 
       {/* <p>Titulo compartido: <strong>{compartida.titulo}</strong></p>
       <p>Descripción compartida: <strong>{compartida.contenido}</strong></p> */}

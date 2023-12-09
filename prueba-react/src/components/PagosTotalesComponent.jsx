@@ -28,8 +28,6 @@ export const PagosTotalesComponent = ({selectedDate, setSelectedDate}) => {
 
     const addPayment = () => {
         // añadir model tipo o pago al dar click
-
-        
     }
       
     const column = [
@@ -160,12 +158,7 @@ export const PagosTotalesComponent = ({selectedDate, setSelectedDate}) => {
             </TableBody>
         </Table>
         </TableContainer>
-        
-        
-        &nbsp;
-        <span>
-            <DataTableComponent />
-        </span>
+    
         */}
     </>
   );

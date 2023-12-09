@@ -63,7 +63,7 @@ export const FormularioComponent = () => {
     <div>
         <h2>Formulario Component</h2>
 
-        { usuario.bio && usuario.bio.length >= 1 && 
+        { usuario.bio && usuario.business && usuario.bio.length >= 1 && 
           (
             <div className="info_usuario label label-gray">
               <strong>{usuario.nombre} {usuario.apellido} </strong> 

@@ -25,7 +25,7 @@ export const MiPrimerEstado = () => {
             </strong> <br />
 
             <button 
-                onClick={ e => cambiarNombre(e, "Papu") }
+                onClick={ e => cambiarNombre(e, "Jerito") }
             >
             Cambiar nombre</button> <br />
 

@@ -12,7 +12,7 @@ import { PruebaContext } from '../context/PruebaContext';
 
 export const AppRouter = () => {
 
-    const [usuario, setUsuario] = useContext(PruebaContext);
+    const {usuario, setUsuario} = useContext(PruebaContext);
 
   return (
     <BrowserRouter>
@@ -29,12 +29,29 @@ export const AppRouter = () => {
                 <li><NavLink to="/articulos">Articulos</NavLink></li>
                 <li><NavLink to="/acerca-de">Acerca de</NavLink></li>
                 <li><NavLink to="/contacto">Contacto</NavLink></li>
-                <li>
-                    {usuario.nick !== null ? (
-                        <NavLink to="/">{usuario.nick}</NavLink>
-                    ): (
+
+                {usuario.hasOwnProperty("nick") && usuario.nick !== null ? (
+                    <>
+                        <li>
+                            <NavLink to="/">{usuario.nick}</NavLink>
+                        </li>
+                        
+                        <li>
+                            {/* al clickear se resetea el usuario y se borra todo */}
+                            <a href="#" onClick={ e => {
+                                e.preventDefault();
+                                setUsuario({});
+                            }}>Cerrar sesión</a>
+                        </li>
+                    </>
+                ):(
+                    <li>
                         <NavLink to="/login">Login</NavLink>
-                    )}
+                    </li>
+                )}
+                
+                <li>
+                    
                 </li>
             </ul>
         </nav>

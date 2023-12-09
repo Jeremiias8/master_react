@@ -16,10 +16,10 @@ function App() {
 
         <header className="App-header">
 
-          <a href="https://vitejs.dev" target="_blank">
+          <a href="#">
             <img src={viteLogo} className="App-logo" alt="Vite logo" />
           </a>
-          <a href="https://react.dev" target="_blank">
+          <a href="#">
             <img src={reactLogo} className="App-logo react" alt="React logo" />
           </a>
 
