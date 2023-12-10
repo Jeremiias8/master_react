@@ -6,7 +6,6 @@ import { FormularioComponent } from './components/FormularioComponent';
 
 function App() {
 
-
   return (
     <>
       <div className="App">
@@ -29,6 +28,7 @@ function App() {
       </div>
     </>
   );
+  
 }
 
 export default App
