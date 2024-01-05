@@ -7,9 +7,8 @@ const Articulo = require('../models/Articulo');
 const prueba = (req, res) => {
 
     return res.status(200).json({
-        message: "soy una accion de prueba desde el controlador de articulos"
+        message: "soy una acción de prueba desde el controlador de articulos"
     });
-
 }
 
 const curso = (req, res) => {
@@ -114,7 +113,6 @@ const listar = async (req, res) => {
             error
         });
     }
-     
 }
 
 const uno = (req, res) => {
@@ -146,7 +144,6 @@ const uno = (req, res) => {
             error
         });
     });
-
 }
 
 const borrar = (req, res) => {
@@ -211,7 +208,6 @@ const editar = (req, res) => {
             articulo: articuloActualizado
         });
     });
-
 }
 
 const subir = (req, res) => {
@@ -284,9 +280,7 @@ const subir = (req, res) => {
                 files: req.file
             });
         });
-
     }
-
 }
 
 const imagen = (req, res) => {
@@ -306,7 +300,6 @@ const imagen = (req, res) => {
                 ruta_fisica
             });
         }
-
     });
 
 }
@@ -324,6 +317,7 @@ const buscador = (req, res) => {
     .sort({fecha: -1})
     .exec().then((articulosEncontrados) => {
 
+        // ejecutar consulta
         if (!articulosEncontrados || articulosEncontrados.length <= 0) {
 
             return res.status(404).json({
@@ -332,17 +326,14 @@ const buscador = (req, res) => {
             });
         }
 
+        // devolver response
         return res.status(200).json({
             status: "success",
             articulos: articulosEncontrados
         });
-
     })
 
-    // ejecutar consulta
-
-    // devolver response
-
+    // if (!busqueda.empty) {console.log("el buscador no está vacío");}
 }
 
 module.exports = {
