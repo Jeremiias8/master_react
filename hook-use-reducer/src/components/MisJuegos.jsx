@@ -11,6 +11,7 @@ export const MisJuegos = () => {
     const [juegos, dispatch] = useReducer(JuegoReducer, [], init);
 
     useEffect(() => {
+
         localStorage.setItem("juegos", JSON.stringify(juegos));
     }, [juegos]);
 
@@ -48,7 +49,6 @@ export const MisJuegos = () => {
         };
 
         dispatch(accion);
-
     }
 
     const editar = (e, id) => {
@@ -83,7 +83,7 @@ export const MisJuegos = () => {
                         {juego.titulo} | {juego.descripcion}
 
                         &nbsp; <button 
-                        onClick={ e => borramelo(juego.id)}>x</button>
+                        onClick={ e => borramelo(e, juego.id)}>x</button>
                         &nbsp; <input type="text" 
                         onBlur={ e => editar(e, juego.id)}
                         onKeyPress={ e => {
@@ -95,14 +95,14 @@ export const MisJuegos = () => {
                         />
                     </li>
                 ))
-            
             }
         </ul>
 
         <h3>Agregar Juego</h3>
 
         <form onSubmit={guardarJuegos}>
-            <input type="text" name='titulo' ref={inputTitulo} placeholder='Título' />
+            <input type="text" name='titulo' 
+            ref={inputTitulo} placeholder='Título' />
 
             <textarea name="descripcion" ref={inputDescrip} placeholder='Descripción'></textarea>
 
